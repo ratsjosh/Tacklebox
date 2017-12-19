@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="hero is-info is-large">
+    <section class="hero is-info is-fullheight">
       <div class="hero-body">
         <div class="container">
           <h1 class="title">
@@ -17,13 +17,8 @@
 
 <script>
   export default {
-    name: 'HelloWorld',
-    data() {
-      return {
-        msg: 'Welcome to Your Vue.js App',
-      };
-    },
-  };
+    name: 'Home',
+  }
 
 </script>
 

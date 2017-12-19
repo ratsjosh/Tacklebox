@@ -24,6 +24,8 @@ module.exports = {
   },
   // add your custom rules here
   rules: {
+    // don't allow extra semicolons
+    "semi": ["error", "never"],
     // don't require .vue extension when importing
     'import/extensions': ['error', 'always', {
       js: 'never',
