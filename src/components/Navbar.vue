@@ -1,9 +1,9 @@
 <template>
   <nav class="navbar is-fixed-top is-transparent">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://bulma.io">
-        <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-      </a>
+      <router-link class="navbar-item" to="/">
+        <span class="subtitle">Tacklebox</span>
+      </router-link>
       <div class="navbar-burger burger" @click="toggleNavbar" :class="{ 'is-active': isActive }" data-target="navbar">
         <span></span>
         <span></span>
@@ -13,60 +13,27 @@
 
     <div id="navbar" class="navbar-menu" :class="{ 'is-active': isActive }">
       <div class="navbar-start">
-        <a class="navbar-item" href="/">
-          Home
-        </a>
+        <router-link class="navbar-item" to="/">Home</router-link>
         <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" href="/">
-            Docs
-          </a>
+         <router-link class="navbar-link" to="/">Community</router-link>
           <div class="navbar-dropdown is-boxed">
-            <a class="navbar-item" href="/">
-              Overview
-            </a>
-            <a class="navbar-item" href="/">
-              Modifiers
-            </a>
-            <a class="navbar-item" href="/">
-              Columns
-            </a>
-            <a class="navbar-item" href="/">
-              Layout
-            </a>
-            <a class="navbar-item" href="/">
-              Form
-            </a>
+            <router-link class="navbar-item" to="/">Small Groups</router-link>
             <hr class="navbar-divider">
-            <a class="navbar-item" href="/">
-              Elements
-            </a>
-            <a class="navbar-item is-active" href="/">
-              Components
-            </a>
+            <router-link class="navbar-item" to="/">Serve</router-link>
+            <router-link class="navbar-item" to="/">Courses & Events</router-link>
+            <router-link class="navbar-item" to="/">Care & Help</router-link>
           </div>
         </div>
+        <router-link class="navbar-item" v-smooth-scroll to="/#about">About</router-link>
+        <router-link class="navbar-item" to="/">Media</router-link>
+        <router-link class="navbar-item" to="/">Resources</router-link>
       </div>
-
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="field is-grouped">
             <p class="control">
-              <a class="bd-tw-button button"
-                target="_blank" href="/">
-                <span class="icon">
-                  <i class="fa fa-camera"></i>
-                </span>
-                <span>
-                  Tweet
-                </span>
-              </a>
-            </p>
-            <p class="control">
               <a class="button is-primary" href="/">
-                <span class="icon">
-                  <i class="fa fa-download"></i>
-                </span>
-                <span>Download</span>
+                <span>Contact Us</span>
               </a>
             </p>
           </div>
@@ -77,19 +44,17 @@
 </template>
 
 <script>
-export default {
-  methods: {
-    toggleNavbar() {
-      this.isActive = !this.isActive
+  export default {
+    methods: {
+      toggleNavbar() {
+        this.isActive = !this.isActive
+      },
     },
-  },
-  data() {
-    return {
-      isActive: false,
-    }
-  },
-}
+    data() {
+      return {
+        isActive: false,
+      }
+    },
+  }
+
 </script>
-
-
-

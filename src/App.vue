@@ -17,7 +17,6 @@ export default {
 </script>
 
 <style lang="sass">
-// @import '../static/fontawesome-free-5.0.1/web-fonts-with-css/css/fontawesome.css'
 @import '../node_modules/bulma/bulma.sass'
 @import '../src/style/mq.sass'
 #app
