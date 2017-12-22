@@ -9,8 +9,13 @@ export default new Router({
   routes: [
     {
       path: '/',
+      alias: '/home',
       name: 'Home',
       component: Home,
+    },
+    {
+      path: '*',
+      redirect: { name: 'Home' },
     },
   ],
 })
