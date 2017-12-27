@@ -13,7 +13,7 @@
 
     <div id="navbar" class="navbar-menu" :class="{ 'is-active': isActive }">
       <div class="navbar-start">
-        <router-link class="navbar-item" to="/">Home</router-link>
+        <router-link class="navbar-item" v-smooth-scroll to="/#top">Home</router-link>
         <div class="navbar-item has-dropdown is-hoverable">
          <router-link class="navbar-link" to="/">Community</router-link>
           <div class="navbar-dropdown is-boxed">
@@ -32,9 +32,7 @@
         <div class="navbar-item">
           <div class="field is-grouped">
             <p class="control">
-              <a class="button is-primary" href="/">
-                <span>Contact Us</span>
-              </a>
+              <router-link class="button is-primary" to="/">Contact Us</router-link>
             </p>
           </div>
         </div>
