@@ -1,9 +1,9 @@
 <template>
   <div>
-    <carousel :images="imgs" :minHeight="82"></carousel>
-    <section id="updates" class="section is-medium">
+    <carousel id="top" :images="imgs" :minHeight="82"></carousel>
+    <section id="about" class="section is-medium">
       <div class="container">
-        <h1 class="title">Updates</h1>
+        <h1 class="title">Fishers of men</h1>
         <h2 class="subtitle">
           A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
         </h2>
