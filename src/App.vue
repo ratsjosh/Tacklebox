@@ -16,12 +16,14 @@ export default {
 }
 </script>
 
-<style lang="sass">
-@import '../node_modules/bulma/bulma.sass'
-@import '../src/style/mq.sass'
-#app
-  font-family: 'Avenir', Helvetica, Arial, sans-serif
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
-  color: #2c3e50
+<style lang="scss">
+@import '../node_modules/bulma/bulma.sass';
+@import '../src/style/mq.scss';
+#app {
+  margin-top: 52px;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
 </style>
